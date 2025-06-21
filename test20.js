@@ -325,9 +325,9 @@ $(function () {
     fileInput.on('change', function (ev) {
         var step2 = $('<div>').append($('<h1>').html(''));
         var files = ev.target.files;
-        if (files.length !== 1 || (!files[0].name.endsWith('.zip') && !files[0].name.endsWith('.rar'))) {
-            return alert('Please select a single .zip or .rar file');
-        }
+        // if (files.length !== 1 || (!files[0].name.endsWith('.zip') && !files[0].name.endsWith('.rar'))) {
+        //     return alert('Please select a single .zip or .rar file');
+        // }
 
         var file = files[0];
         var isRar = file.name.endsWith('.rar');
